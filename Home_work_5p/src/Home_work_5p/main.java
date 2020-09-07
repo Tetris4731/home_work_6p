@@ -39,8 +39,6 @@ public class main {
         System.arraycopy(arr, HALF, a2, 0, HALF);
 
 
-
-
         Thread thread1 = new Thread(() -> {
             for (int i = 0; i < a1.length; i++) {
                 a1[i] = (float) (a1[i] * Math.sin(0.2f + i / 5) * Math.cos(0.2f + i / 5) * Math.cos(0.4f + i / 2));
